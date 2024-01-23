@@ -18,7 +18,7 @@ export const loadData = async (key: string): Promise<any> => {
     const data = await localForage.getItem(key);
     return data;
   } catch (err) {
-    return null;
+    return [];
   }
 };
 
@@ -30,9 +30,3 @@ export const clearStorage = async (): Promise<any> => {
     return null;
   }
 };
-
-// Usage
-// clearStorage()
-
-// saveData('myKey', { foo: 'bar' });
-// loadData('myKey');

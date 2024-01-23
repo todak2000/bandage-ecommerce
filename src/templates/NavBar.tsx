@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable import/no-extraneous-dependencies */
 
@@ -73,7 +74,7 @@ function NavBar() {
         saveData('cart', cartt);
       } else {
         const persistData = await loadData('cart');
-        dispatch(setCart(persistData));
+        dispatch(setCart(persistData || []));
       }
     };
 
@@ -86,7 +87,7 @@ function NavBar() {
         saveData('wishList', wishh);
       } else {
         const persistWishListData = await loadData('wishList');
-        dispatch(setWish(persistWishListData));
+        dispatch(setWish(persistWishListData || []));
       }
     };
 
@@ -146,6 +147,17 @@ function NavBar() {
       dispatch(setProducts(data?.products));
     }
   }, [data, dispatch, isSuccess]);
+
+  function handleClick(id: number) {
+    switch (id) {
+      case 2:
+        return handleToggleCart;
+      case 3:
+        return handleToggleWishList;
+      default:
+        return () => null;
+    }
+  }
 
   const NavArr: INavbar[] = [
     {
@@ -286,13 +298,7 @@ function NavBar() {
                     return (
                       <button
                         type="button"
-                        onClick={
-                          id === 2
-                            ? handleToggleCart
-                            : id === 3
-                              ? handleToggleWishList
-                              : () => null
-                        }
+                        onClick={handleClick(id as number)}
                         key={uuidv4()}
                         className="my-3 flex flex-row items-center font-bold text-primary-blue hover:text-secondary-black md:hidden "
                       >
@@ -323,13 +329,7 @@ function NavBar() {
             return (
               <button
                 type="button"
-                onClick={
-                  id === 2
-                    ? handleToggleCart
-                    : id === 3
-                      ? handleToggleWishList
-                      : () => null
-                }
+                onClick={handleClick(id as number)}
                 key={uuidv4()}
                 className="hidden w-[2rem] flex-row items-center hover:text-secondary-black md:flex md:w-[3rem]"
                 aria-label="navbar icon options"
@@ -365,4 +365,4 @@ function NavBar() {
     </nav>
   );
 }
-export default React.memo(NavBar);
+export default NavBar;

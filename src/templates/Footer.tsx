@@ -151,7 +151,7 @@ const footerData: IFooterOptions[] = [
 ];
 
 function Footer() {
-  const [isLoading, setIsloading] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   return (
     <>
       <section className="flex flex-col gap-[1rem] bg-white p-8 md:flex-row md:items-center md:justify-between md:gap-0 md:px-28">
@@ -204,9 +204,9 @@ function Footer() {
                   <Formik
                     initialValues={{ email: '' }}
                     onSubmit={() => {
-                      setIsloading(true);
+                      setIsLoading(true);
                       setTimeout(() => {
-                        setIsloading(false);
+                        setIsLoading(false);
                       }, 400);
                     }}
                   >

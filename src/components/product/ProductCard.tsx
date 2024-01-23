@@ -128,6 +128,28 @@ const ProductCardSection: NextPage = () => {
     });
   };
 
+  const handleDisabled = (i: number) => {
+    const id = Number(productId as string);
+    if (i + 1 === 3) {
+      return cartt?.filter((item: ICart) => item.id === id).length > 0;
+    }
+    if (i + 1 === 2) {
+      return wishh?.filter((item: any) => item.id === id).length > 0;
+    }
+    return false;
+  };
+
+  const handleClick = (i: number) => {
+    switch (i + 1) {
+      case 3:
+        return handleAddToCart;
+      case 2:
+        return handleAddToWish;
+      default:
+        return () => null;
+    }
+  };
+
   return (
     <>
       <div
@@ -314,27 +336,9 @@ const ProductCardSection: NextPage = () => {
                   <button
                     data-testid="card-button"
                     type="button"
-                    disabled={
-                      i + 1 === 3
-                        ? cartt?.filter(
-                            (item: ICart) =>
-                              item.id === Number(productId as string),
-                          ).length > 0
-                        : i + 1 === 2
-                          ? wishh?.filter(
-                              (item: any) =>
-                                item.id === Number(productId as string),
-                            ).length > 0
-                          : false
-                    }
+                    disabled={handleDisabled(i)}
                     key={uuidv4()}
-                    onClick={
-                      i + 1 === 3
-                        ? handleAddToCart
-                        : i + 1 === 2
-                          ? handleAddToWish
-                          : () => null
-                    }
+                    onClick={handleClick(i)}
                     className={cn({
                       'border-[1px] bg-white border-[#E8E8E8] flex flex-col justify-center items-center rounded-full size-[40px] text-primary-black mx-1':
                         i !== 0,
