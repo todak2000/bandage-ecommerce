@@ -24,8 +24,8 @@ https://bandage-ecommerce-rho.vercel.app
 - 💨 Tailwind CSS 3
 - ✨ Redux toolkit
 - ✨ React Query
-- ✨ React-Share
-- ✨ localForage
+- ✨ React-Redux
+- ✨ localForage - Data persistence
 - 🃏 Jest — Configured for unit testing
 
 ## Screens/Pages
