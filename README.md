@@ -7,8 +7,9 @@ Introducing a user-friendly e-commerce website with a minimalist design. Our pla
 
 
 ## LightHouse Score
+![Light house score](lighthouse_results/desktop/pagespeed.svg)
 
-[LIGHTHOUSE SCORE LINK](https://htmlpreview.github.io/?https://bandage-ecommerce-rho.vercel.app)
+[LIGHTHOUSE SCORE LINK](https://htmlpreview.github.io/?https://github.com/todak2000/bandage-ecommerce/blob/main/lighthouse_results/desktop/github_com_todak2000_bandage_ecommerce_git.html)
 
 
 
