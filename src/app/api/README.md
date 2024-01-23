@@ -1,4 +1,4 @@
-# Simple Blogging Platform API documentation
+# Bandage API Functions documentation
 
 This is the Offical API documentation for a Bandage, an e-commerce, user-friendly e-commerce website with a minimalist design.  Bandage API using React Query, React toolkit and other fetching data from an external endpoint. The project aims to create a user-friendly website can read product listings, add items to their cart or wishlist, with data persisting even after refreshing or reopening the page
 
@@ -10,13 +10,13 @@ https://dummyjson.com/docs/
 
 ## Installation
 
-Provided you follow the instructions [here](README.md): `README.md`. you have nothing else to do
+Provided you follow the instructions [here](README.md): `https://github.com/todak2000/bandage-ecommerce/blob/main/README.md`. you have nothing else to do
 
 ## Endpoints Functions
 
 This project implements the following features endpoints:
 
-**getProductCategories()**
+**1. getProductCategories()**
 
 **Description:**
 
@@ -35,7 +35,7 @@ A promise that resolves with the product categories.
   
 ```
 
-**getProductByCategory(category)**
+**2. getProductByCategory(category)**
 
 **Description:**
 
@@ -58,7 +58,7 @@ A promise that resolves with the products of the specified category.
   
 ```
 
-**getAllProducts(skip)**
+**3. getAllProducts(skip)**
 
 **Description:**
 
@@ -82,7 +82,7 @@ A promise that resolves with the products.
 ```
 
 
-**getSingleProduct(productId)**
+**4. getSingleProduct(productId)**
 
 **Description:**
 

@@ -102,7 +102,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Author
 
-https://bandage-ecommerce-rho.vercel.app
 Made with ♥ by [Daniel Olagunju](https://github.com/todak2000) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40todak)](https://twitter.com/todak)
 
 ---
