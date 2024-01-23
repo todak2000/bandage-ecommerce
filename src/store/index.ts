@@ -128,8 +128,13 @@ const WishSlice = createSlice({
     setWish: (_state: any, action: PayloadAction<any>) => {
       return action.payload;
     },
-    updateWish: (state: any, action: PayloadAction<any>) => {
-      return [...state, action.payload];
+    updateWish: (state: any, action: PayloadAction<ICart>) => {
+      const itemIndex: number = state.findIndex(
+        (item: any) => item.id === action.payload.id,
+      );
+      if (itemIndex < 0) {
+        state.push(action.payload);
+      }
     },
     removeWish: (state, action: PayloadAction<number>) => {
       const itemIndex = state.findIndex((item) => item.id === action.payload);
