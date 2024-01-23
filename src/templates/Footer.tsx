@@ -165,6 +165,7 @@ function Footer() {
                 href="/"
                 key={idx.toString()}
                 data-testid="link"
+                aria-label="social media icon"
                 className="mr-3 flex flex-row items-center text-primary-blue md:mx-3"
               >
                 {icon ?? null}

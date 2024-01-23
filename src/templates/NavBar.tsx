@@ -332,6 +332,7 @@ function NavBar() {
                 }
                 key={uuidv4()}
                 className="hidden w-[2rem] flex-row items-center hover:text-secondary-black md:flex md:w-[3rem]"
+                aria-label="navbar icon options"
               >
                 {icon}
                 {id !== 1 ? (
