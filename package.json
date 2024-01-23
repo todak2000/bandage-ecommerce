@@ -12,7 +12,7 @@
     "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
     "check-types": "tsc --noEmit --pretty",
     "test": "jest",
-    "commit": "cz",
+    "commit": "git add . && cz",
     "prepare": "husky install",
     "postbuild": "next-sitemap"
   },

@@ -6,10 +6,15 @@ Introducing a user-friendly e-commerce website with a minimalist design. Our pla
 ![Image bandage](public/bandage.png)
 
 
+## LightHouse Score
+
+[LIGHTHOUSE SCORE LINK](https://htmlpreview.github.io/?https://bandage-ecommerce-rho.vercel.app)
+
+
 
 ## URL
 
-https://micro-blog-khaki.vercel.app/
+https://bandage-ecommerce-rho.vercel.app
 
 ## Built with
 
@@ -96,7 +101,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Author
 
-
+https://bandage-ecommerce-rho.vercel.app
 Made with ♥ by [Daniel Olagunju](https://github.com/todak2000) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40todak)](https://twitter.com/todak)
 
 ---
