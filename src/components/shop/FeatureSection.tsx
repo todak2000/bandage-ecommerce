@@ -65,7 +65,7 @@ const FeatureSection: NextPage = () => {
         ) : null}
         <h4
           data-testid="feature-header-text"
-          className="text-2xl font-bold uppercase text-primary-black"
+          className="text-[1.125rem] font-bold uppercase text-primary-black"
         >
           Bestseller Products
         </h4>

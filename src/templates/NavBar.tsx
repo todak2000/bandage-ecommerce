@@ -336,7 +336,7 @@ function NavBar() {
                 type="button"
                 onClick={handleClick(id as number)}
                 key={uuidv4()}
-                className="hidden w-[2rem] flex-row items-center hover:text-secondary-black md:flex md:w-[3rem]"
+                className="hidden w-[2rem] flex-row items-center hover:text-secondary-black md:flex"
                 aria-label="navbar icon options"
               >
                 {icon}

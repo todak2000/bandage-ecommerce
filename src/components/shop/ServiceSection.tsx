@@ -44,7 +44,7 @@ const ServiceSection: NextPage = () => {
         </p>
         <h4
           data-testid="service-header-item"
-          className="text-2xl font-bold uppercase text-primary-black"
+          className="text-[1.125rem] font-bold uppercase text-primary-black"
         >
           The Best Services
         </h4>

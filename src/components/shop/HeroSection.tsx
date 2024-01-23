@@ -65,7 +65,7 @@ const HeroSection: NextPage = () => {
               </p>
               <h3
                 data-testid="hero-text"
-                className="font-bold uppercase text-primary-black"
+                className="text-[1.125rem] font-bold uppercase text-primary-black"
               >
                 {productsData[0]?.category}
               </h3>
@@ -97,7 +97,7 @@ const HeroSection: NextPage = () => {
                 </p>
                 <h3
                   data-testid="hero-text"
-                  className="font-bold uppercase text-primary-black"
+                  className="text-[1.125rem] font-bold uppercase text-primary-black"
                 >
                   {productsData[0]?.category}
                 </h3>
@@ -129,7 +129,7 @@ const HeroSection: NextPage = () => {
                   </p>
                   <h3
                     data-testid="hero-text"
-                    className="font-bold uppercase text-primary-black"
+                    className="text-[1.125rem] font-bold uppercase text-primary-black"
                   >
                     {productsData[0]?.category}
                   </h3>
@@ -160,7 +160,7 @@ const HeroSection: NextPage = () => {
                   </p>
                   <h3
                     data-testid="hero-text"
-                    className="font-bold uppercase text-primary-black"
+                    className="text-[1.125rem] font-bold uppercase text-primary-black"
                   >
                     {productsData[0]?.category}
                   </h3>

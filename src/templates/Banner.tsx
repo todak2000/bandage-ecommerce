@@ -86,7 +86,7 @@ function Banner() {
                       href="/"
                       key={idx.toString()}
                       data-testid="span"
-                      aria-label={name as string}
+                      aria-label="social media icons"
                       className="mx-3 flex flex-row items-center text-xs"
                     >
                       {icon ?? null} {name ?? null}
