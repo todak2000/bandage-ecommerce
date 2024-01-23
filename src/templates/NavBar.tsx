@@ -148,7 +148,7 @@ function NavBar() {
     }
   }, [data, dispatch, isSuccess]);
 
-  function handleClick(id: number) {
+  const handleClick = (id: number) => {
     switch (id) {
       case 2:
         return handleToggleCart;
@@ -157,7 +157,7 @@ function NavBar() {
       default:
         return () => null;
     }
-  }
+  };
 
   const NavArr: INavbar[] = [
     {
@@ -233,6 +233,11 @@ function NavBar() {
                 <Link
                   key={id.toString()}
                   href={redirectLink}
+                  onClick={
+                    id !== 2
+                      ? () => setIsOpen(false)
+                      : () => setIsCaret(!isCaret)
+                  }
                   data-testid="link"
                   className={cn(
                     'md:p flex flex-row items-center text-[1.875rem] font-medium text-secondary-black md:font-semibold hover:text-primary-blue',

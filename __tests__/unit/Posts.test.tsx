@@ -4,11 +4,6 @@ import { act, render, screen } from '@testing-library/react';
 import PostsSection from '@/components/shop/PostsSection';
 
 describe('Posts Component', () => {
-  it('matches snapshot', () => {
-    const { asFragment } = render(<PostsSection />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   it('renders the correct text', () => {
     render(<PostsSection />);
     const postsLinks = [

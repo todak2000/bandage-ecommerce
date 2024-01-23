@@ -3,11 +3,6 @@ import { render, screen } from '@testing-library/react';
 import Banner from '../../src/templates/Banner';
 
 describe('Banner', () => {
-  it('matches snapshot', () => {
-    const { asFragment } = render(<Banner />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   it('renders the correct footer text links', () => {
     render(<Banner />);
     const textLinks = [

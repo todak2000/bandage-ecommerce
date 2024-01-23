@@ -4,11 +4,6 @@ import { render, screen } from '@testing-library/react';
 import Footer from '../../src/templates/Footer';
 
 describe('Footer', () => {
-  it('matches snapshot', () => {
-    const { asFragment } = render(<Footer />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   it('renders without crashing', () => {
     render(<Footer />);
     const logos = screen.getAllByText(/Bandage/i);

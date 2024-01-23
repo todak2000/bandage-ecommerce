@@ -1,6 +1,8 @@
 {
   "name": "Bandage",
   "version": "1.0.0",
+  "description": "Introducing a user-friendly e-commerce website with a minimalist design",
+  "license": "MIT",
   "scripts": {
     "dev:next": "next dev",
     "dev": "run-p dev:*",

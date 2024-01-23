@@ -95,7 +95,7 @@ const Cart: NextPage = () => {
   return (
     <section
       data-testid="cart-wrapper"
-      className={cn('fixed right-0  z-[100]  overflow-auto bg-white md:w-1/3', {
+      className={cn('fixed right-0  z-[500]  overflow-auto bg-white md:w-1/3', {
         'w-full h-[50vh]  bottom-0': !minimize,
         'w-full h-16 bottom-20': minimize,
       })}

@@ -148,7 +148,7 @@ const WishList: NextPage = () => {
                         : title}
                     </p>
                     <p className="text-xs text-secondary-black">
-                      Unit Price: {currencyFormatter.format(Number(price))}
+                      Price: {currencyFormatter.format(Number(price))}
                     </p>
                   </div>
 

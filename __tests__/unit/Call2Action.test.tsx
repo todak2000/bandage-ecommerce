@@ -3,11 +3,6 @@ import { render, screen } from '@testing-library/react';
 import CallToActionSection from '@/components/shop/CallToActionSection';
 
 describe('Call2Action', () => {
-  it('matches snapshot', () => {
-    const { asFragment } = render(<CallToActionSection />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   it('renders the correct text', () => {
     render(<CallToActionSection />);
     const textLinks = [

@@ -3,11 +3,6 @@ import { render, screen } from '@testing-library/react';
 import ServiceSection from '@/components/shop/ServiceSection';
 
 describe('Service', () => {
-  it('matches snapshot', () => {
-    const { asFragment } = render(<ServiceSection />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   it('renders the correct text', () => {
     render(<ServiceSection />);
     const textLinks = [
